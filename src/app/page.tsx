@@ -36,27 +36,39 @@ export default function Home() {
                 </div>
                 <div className="flex gap-4">
                   <Link
-                    href="https://github.com"
+                    href="https://github.com/Anurag-Suthar"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button variant="ghost" size="icon">
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="cursor-pointer"
+                    >
                       <Github className="h-5 w-5" />
                       <span className="sr-only">GitHub</span>
                     </Button>
                   </Link>
                   <Link
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/anurag-suthar-21a9331a9/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button variant="ghost" size="icon">
+                    <Button
+                      variant="default"
+                      size="icon"
+                      className="cursor-pointer"
+                    >
                       <Linkedin className="h-5 w-5" />
                       <span className="sr-only">LinkedIn</span>
                     </Button>
                   </Link>
-                  <Link href="mailto:contact@example.com">
-                    <Button variant="ghost" size="icon">
+                  <Link href="mailto:anuragsuthar2132@gmail.com">
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="cursor-pointer"
+                    >
                       <Mail className="h-5 w-5" />
                       <span className="sr-only">Email</span>
                     </Button>

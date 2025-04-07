@@ -65,7 +65,7 @@ export default function AboutPage() {
             alt="John Doe"
             width={400}
             height={400}
-            className="rounded-lg object-cover"
+            className="aspect-square overflow-hidden rounded-full object-cover border-2 border-primary"
           />
         </div>
       </div>
