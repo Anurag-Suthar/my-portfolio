@@ -10,6 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function ProjectsPage() {
   const projects = [
@@ -83,7 +84,7 @@ export default function ProjectsPage() {
         {projects.map((project, index) => (
           <Card key={index} className="overflow-hidden">
             <div className="aspect-video w-full overflow-hidden">
-              <img
+              <Image
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
                 className="h-full w-full object-cover transition-all hover:scale-105"
