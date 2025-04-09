@@ -87,6 +87,8 @@ export default function ProjectsPage() {
               <Image
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
+                width={80}
+                height={80}
                 className="h-full w-full object-cover transition-all hover:scale-105"
               />
             </div>

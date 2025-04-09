@@ -80,20 +80,20 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-medium">Email</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  contact@example.com
+                  anuragsuthar2132@gmail.com
                 </p>
               </div>
               <div>
                 <h3 className="font-medium">Location</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  San Francisco, CA
+                  Bikaner, Rajasthan, India
                 </p>
               </div>
               <div>
                 <h3 className="font-medium">Social</h3>
                 <div className="mt-2 flex gap-4">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/Anurag-Suthar"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-500 hover:text-primary"
@@ -101,7 +101,7 @@ export default function ContactPage() {
                     GitHub
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/anurag-suthar-21a9331a9/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-500 hover:text-primary"

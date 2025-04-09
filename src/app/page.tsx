@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-[calc(100vh-4rem)]">
       <main className="flex-1">
-        
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 mx-auto md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
@@ -56,7 +55,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     <Button
-                      variant="default"
+                      variant="ghost"
                       size="icon"
                       className="cursor-pointer"
                     >

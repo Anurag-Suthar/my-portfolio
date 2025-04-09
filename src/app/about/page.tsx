@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 import { Card, CardContent } from "@/components/ui/card";
+import { Experience } from "./Experience";
+import { EducationSection } from "./EducationSection";
 
 export default function AboutPage() {
   return (
@@ -61,11 +63,11 @@ export default function AboutPage() {
         </div>
         <div className="flex items-center justify-center">
           <Image
-            src="/images/profile-picture.jpg"
+            src="/images/profile-picture2.png"
             alt="John Doe"
             width={400}
             height={400}
-            className="aspect-square overflow-hidden rounded-full object-cover border-2 border-primary"
+            className="aspect-square overflow-hidden rounded-full object-contain border-2 border-primary"
           />
         </div>
       </div>
@@ -74,78 +76,10 @@ export default function AboutPage() {
         <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">
           Experience
         </h2>
-        <div className="mt-8 grid gap-6">
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-xl font-bold">Senior Frontend Developer</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Tech Innovations Inc. | 2020 - Present
-                </p>
-                <p className="mt-2">
-                  Led the frontend development team in building a modern web
-                  application using React, Next.js, and TypeScript. Implemented
-                  CI/CD pipelines and improved performance by 40%.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-xl font-bold">Full-Stack Developer</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  WebSolutions Co. | 2018 - 2020
-                </p>
-                <p className="mt-2">
-                  Developed and maintained multiple client websites using React,
-                  Node.js, and MongoDB. Collaborated with designers to implement
-                  responsive UI/UX designs.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-xl font-bold">Junior Web Developer</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Digital Agency | 2016 - 2018
-                </p>
-                <p className="mt-2">
-                  Built and maintained client websites using HTML, CSS,
-                  JavaScript, and PHP. Worked closely with the design team to
-                  implement pixel-perfect designs.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+        <Experience />
       </div>
 
-      <div className="mt-16">
-        <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">
-          Education
-        </h2>
-        <div className="mt-8 grid gap-6">
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-xl font-bold">
-                  Bachelor of Science in Computer Science
-                </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  University of Technology | 2012 - 2016
-                </p>
-                <p className="mt-2">
-                  Graduated with honors. Specialized in web development and
-                  software engineering.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </div>
+      <EducationSection />
     </div>
   );
 }
