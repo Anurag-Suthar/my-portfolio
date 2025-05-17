@@ -38,22 +38,22 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
-      <div className="container mx-auto flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
+      <div className="container mx-auto flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0 px-4">
         <div className="flex gap-6 md:gap-10">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="inline-block font-bold text-xl">AS</span>
+            <span className="inline-block font-bold text-xl">Anurag.Dev</span>
           </Link>
         </div>
         {isMobile ? (
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="ml-auto">
-                <Menu className="h-5 w-5" />
+                <Menu className="size-8" />
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
-              <nav className="flex flex-col gap-4 mt-8">
+              <nav className="flex flex-col gap-4 mt-8 px-4">
                 {routes.map((route) => (
                   <Link
                     key={route.href}

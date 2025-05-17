@@ -108,14 +108,14 @@ export default function ContactPage() {
                   >
                     LinkedIn
                   </a>
-                  <a
+                  {/* <a
                     href="https://twitter.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-500 hover:text-primary"
                   >
                     Twitter
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </CardContent>
